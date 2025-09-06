@@ -19,13 +19,6 @@ export const authConfig = {
     }),
   ],
   adapter: PrismaAdapter(db),
-  session: {
-    strategy: "database",
-  },
-  pages: {
-    signIn: "/",
-    error: "/api/auth/error",
-  },
   callbacks: {
     async signIn({ user }) {
       // Only allow SRMIST college emails
