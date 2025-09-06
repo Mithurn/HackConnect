@@ -23,7 +23,7 @@ export const authConfig = {
     strategy: "database",
   },
   pages: {
-    signIn: "/api/auth/signin",
+    signIn: "/",
     error: "/api/auth/error",
   },
   callbacks: {
